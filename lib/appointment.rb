@@ -7,4 +7,10 @@ class Appointment
     self.patient = patient
     self.doctor = doctor
     self.class.all<<self
+  end
+
+  def self.all
+    @@all
+  end
+
 end
