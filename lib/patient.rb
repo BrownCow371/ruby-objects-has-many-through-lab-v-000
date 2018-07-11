@@ -19,4 +19,8 @@ class Patient
   def doctors
     self.appointments.collect {|a| a.doctor}
   end
+
+  def self.all
+    @@all
+  end
 end
